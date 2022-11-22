@@ -4,8 +4,7 @@ function nil_metatable:__index()    return nil        end
 function nil_metatable:__newindex() return            end
 function nil_metatable:__ipairs()   return ipairs({}) end
 function nil_metatable:__pairs()    return pairs({})  end
-function nil_metatable:__call()     return            end
-
+function nil_metatable:__call(...)  return ...        end
 
 function nil_metatable:__concat(v) return v end
 function nil_metatable:__unm(v)    return v end
