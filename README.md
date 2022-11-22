@@ -43,7 +43,6 @@ end
 With this "hack":
 
 ```lua
-function file_exists(name)
 function filter(tbl,callback)
   local result = {}
   for i,value in ipairs(tbl) do
@@ -52,7 +51,6 @@ function filter(tbl,callback)
     end
   end
   return result
-end
 end
 ```
 
